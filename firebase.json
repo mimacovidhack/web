@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/",
+    "public": "dist/mima-covid-hack-app",
     "ignore": [
       "firebase.json",
       "**/.*",
