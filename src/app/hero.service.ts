@@ -12,7 +12,7 @@ import { HEROES } from './mock-heroes';
 })
 export class HeroService {
 
-  private heroesUrl = 'http://mimacovidhack.eu-de.cf.appdomain.cloud/heroes';  // URL to web api
+  private heroesUrl = 'https://mimacovidhack.eu-de.cf.appdomain.cloud/heroes';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
