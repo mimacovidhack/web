@@ -1,5 +1,18 @@
 # MimaCovidHackApp
 
+## STATUS
+
+Created a scaffold that can read heroes from the backend and create a new one
+Missing features:
+- [ ] Update Heroes
+- [ ] Delete Heroes
+- [ ] Create volounteer resource
+- [ ] Create routing to have 2 "sections" -> Volunteers and heroes
+
+- [ ] Volunteer management (CRUD)
+
+- [ ] Discuss and implement a UI for the matching
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server

@@ -1,0 +1,53 @@
+<h2>Heroes</h2>
+
+<div class="row">
+    <div class="column column-50">
+        <form #heroForm="ngForm">
+            <fieldset>
+                <label for="nameField">Name</label>
+                <input type="text" id="name" required [(ngModel)]="model.name" name="name">
+
+                <label for="nameField">Last name</label>
+                <input type="text" id="name" required [(ngModel)]="model.lastName" name="lastName">
+
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" [(ngModel)]="model.profession" name="profession">
+
+                <label for="profession">Age</label>
+                <input type="text" id="profession" [(ngModel)]="model.age" name="age">
+
+                <button type="button" class="button" (click)="add()">New Hero</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Lst Name</th>
+            <th>Age</th>
+            <th>Profession</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+            <td>
+                {{hero.name}}
+            </td>
+            <td>
+                {{hero.lastName}}
+            </td>
+            <td>
+                {{hero.age}}
+            </td>
+            <td>
+                {{hero.profession}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
